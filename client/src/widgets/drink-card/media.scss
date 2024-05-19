@@ -1,0 +1,22 @@
+@media screen and (max-width: 767px) {
+ .project__content {
+   flex-direction: column;
+   &-main {
+     width: 90vw;
+   }
+   &-blocks {
+     width: 90vw;
+   }
+ }
+  .top__breadcrumbs {
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .top__breadcrumbs-address {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}

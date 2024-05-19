@@ -1,0 +1,13 @@
+@import '../../app/scss/mixins';
+@import '../../app/scss/colors';
+
+select {
+  border: 1px solid $dark-1;
+  background-color: transparent;
+  width: 100%;
+  padding: 3px;
+  &:focus {
+    outline: none;
+    background-color: $light-1;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../app/scss/mixins';
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+
+  &-item {
+    padding: 7px 10px;
+  }
+
+  &-link {
+    @include link-white;
+  }
+
+}

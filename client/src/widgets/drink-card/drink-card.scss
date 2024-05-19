@@ -1,0 +1,40 @@
+@import '../../app/scss/mixins';
+@import '../../app/scss/colors';
+
+.drink-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $black;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: $white;
+  width: 280px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__image {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  &__content {
+    height: 50px;
+    padding: 5px;
+  }
+
+  &__title {
+    @include title-h5;
+    margin: 0 0 8px;
+  }
+
+}
+
+.link {
+  @include link-blue;
+}
+

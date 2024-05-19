@@ -1,0 +1,26 @@
+@import '../../app/scss/mixins';
+@import '../../app/scss/colors';
+
+.alphabet-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  &__button {
+    margin: 5px;
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    color: $white-full;
+    @include caption-lg;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: transparent;
+      color: $black;
+    }
+  }
+}
