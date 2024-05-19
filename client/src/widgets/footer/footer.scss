@@ -1,0 +1,14 @@
+@import '../../app/scss/mixins';
+@import '../../app/scss/colors';
+
+.footer {
+  width: 100vw;
+  height: 30px;
+  &__inner {
+    @include caption-lg;
+    color: $black;
+    text-align: left;
+  }
+
+}
+

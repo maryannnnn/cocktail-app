@@ -1,0 +1,50 @@
+@import '../../app/scss/mixins';
+@import '../../app/scss/colors';
+
+.cocktails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &__title {
+    @include title-h3;
+    color: $black;
+    padding: 0 5px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &-main {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 1200px;
+      height: 600px;
+    }
+
+  }
+}
+
+.swiper {
+  width: 1200px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: transparent;
+  //height: calc((100% - 30px) / 2) !important;
+  //height: 200px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

@@ -1,0 +1,148 @@
+@import 'fonts';
+@import 'colors';
+
+@mixin title-h1 {
+  font-family: $font-bold;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 140%;
+}
+
+@mixin title-h2 {
+  font-family: $font-bold;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 140%;
+}
+
+@mixin title-h3 {
+  font-family: $font-bold;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+@mixin title-h4 {
+  font-family: $font-bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@mixin title-h5 {
+  font-family: $font-bold;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@mixin title-h6 {
+  font-family: $font-bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@mixin title-banner {
+  font-family: $font-bold;
+  font-style: normal;
+  font-size: 128px;
+  line-height: 140%;
+}
+
+@mixin body-xl {
+  font-family: $font-regular;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 180%;
+}
+
+@mixin body-lg {
+  font-family: $font-regular;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+@mixin body-md {
+  font-family: $font-regular;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+@mixin body-sm {
+  font-family: $font-regular;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 180%;
+}
+
+@mixin body-xs {
+  font-family: $font-regular;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 180%;
+}
+
+@mixin caption-lg {
+  font-family: $font-sem-bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 180%;
+}
+
+@mixin caption-md {
+  font-family: $font-regular;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 180%;
+}
+
+@mixin caption-sm {
+  font-family: $font-regular;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 180%;
+}
+
+@mixin link-red {
+  color: $Logo-1;
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}
+
+@mixin link-black {
+  color: $black;
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}
+
+@mixin link-blue {
+  color: $blue-7;
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}
+
+@mixin link-white {
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    color: $white-full;
+  }
+}
+
+@mixin link-white-full {
+  color: $white-full;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+  }
+}
+
