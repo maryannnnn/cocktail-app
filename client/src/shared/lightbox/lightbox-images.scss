@@ -1,0 +1,11 @@
+
+@import '../../app/scss/mixins';
+@import '../../app/scss/colors';
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid $white;
+  padding: 5px;
+}

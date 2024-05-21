@@ -10,3 +10,18 @@ export const getCocktailsAction = async (letter: string): Promise<ICocktail[]> =
         throw new Error('Failed to fetch cocktails');
     }
 };
+
+
+export const getDrinkAction = async (id: string): Promise<ICocktail> => {
+    try {
+        const response = await axios.get<{ drinks: ICocktail[] }>(`${BASIS_URL}/lookup.php?i=${id}`);
+        const drinks = response.data.drinks;
+        if (drinks && drinks.length > 0) {
+            return drinks[0];
+        }
+        throw new Error('Drink not found');
+    } catch (e) {
+        console.error(e);
+        throw new Error('Failed to fetch cocktail');
+    }
+};
