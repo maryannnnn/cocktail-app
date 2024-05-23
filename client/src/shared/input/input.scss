@@ -2,13 +2,21 @@
 @import '../../app/scss/colors';
 
 input {
-  border: 1px solid $dark-1;
+  border: 1px solid $black;
+  border-radius: 7px;
   background-color: transparent;
+  color: $black;
   width: 100%;
-  padding: 3px;
+  padding: 5px;
+  margin: 5px;
+
   &:focus {
     outline: none;
-    background-color: $light-1;
+    background-color: $white;
   }
-}
 
+  &::placeholder {
+    padding-left: 7px;
+  }
+
+}

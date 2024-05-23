@@ -8,7 +8,7 @@ import { ICocktail } from "../../entities/cocktails/types/cocktailsTypes";
 import { IIngredient } from "../../entities/ingredients/types/ingredientTypes";
 import { getIngredientsCocktail } from "../../features/ingredients/getIngredientsCocktail";
 import IngredientsBlock from "../../widgets/inredients-block/IngredientsBlock";
-import LightboxImages from "../../shared/lightbox/LightboxImages"
+import SwiperBlock from "../../shared/swiper-block/SwiperBlock"
 
 const CocktailPage: FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -67,7 +67,7 @@ const CocktailPage: FC = () => {
             <h1 className="cocktail__title">Cocktail: {cocktail.strDrink}</h1>
             <div className="cocktail__top">
               <div className="cocktail__top-left">
-                <LightboxImages cocktailImage={cocktail.strDrinkThumb} ingredientsImages={ingredients} />
+                <SwiperBlock cocktailImage={cocktail.strDrinkThumb} ingredientsImages={ingredients} />
               </div>
               <div className="cocktail__top-right">
                 <h2 className="cocktail__top-right-title">Ingredients</h2>

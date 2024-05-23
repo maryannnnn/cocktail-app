@@ -1,6 +1,6 @@
-import React, { useState, FC } from "react";
+import React, { useState, useEffect, FC } from "react";
 import './lightbox-images.scss'
-import Lightbox from "react-image-lightbox";
+import Lightbox from "react-image-lightbox";       
 import "react-image-lightbox/style.css";
 import { IIngredient } from "../../entities/ingredients/types/ingredientTypes";
 
@@ -12,11 +12,15 @@ interface LightboxImagesProps {
 const LightboxImages: FC<LightboxImagesProps> = ({cocktailImage, ingredientsImages}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [photoIndex, setPhotoIndex] = useState<number>(0);
-  const images = [cocktailImage];
+  const [images, setImages] = useState<string[]>([]);
 
-  ingredientsImages.map((item, index )=> {
-    images.push(item.ingredientUrlImage)
-  })
+  useEffect(() => {
+    const imgArray = [cocktailImage];
+    ingredientsImages.forEach((item) => {
+      imgArray.push(item.ingredientUrlImage);
+    });
+    setImages(imgArray);
+  }, [cocktailImage, ingredientsImages]);
 
   return (
     <div>

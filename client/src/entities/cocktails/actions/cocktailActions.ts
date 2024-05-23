@@ -1,6 +1,7 @@
 import axios from "axios";
 import {BASIS_URL} from "../../../app/config/config";
 import {ICocktail} from "../types/cocktailsTypes";
+import drinksData from '../../../app/assets/drinks/drinks.json';
 
 export const getCocktailsAction = async (letter: string): Promise<ICocktail[]> => {
     try {
@@ -18,6 +19,17 @@ export const getDrinkAction = async (id: string): Promise<ICocktail> => {
         const drinks = response.data.drinks;
         if (drinks && drinks.length > 0) {
             return drinks[0];
+        } else {
+            const transformedDrinksData: ICocktail[] = drinksData
+            .filter(item => item.idDrink === id)
+            .map((drink) => ({
+                ...drink,
+                dateModified: new Date(drink.dateModified)
+            }));
+
+            if(transformedDrinksData.length > 0) {
+                return transformedDrinksData[0]
+            }
         }
         throw new Error('Drink not found');
     } catch (e) {

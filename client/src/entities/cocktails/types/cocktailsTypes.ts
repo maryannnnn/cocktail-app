@@ -16,7 +16,7 @@ export interface ICocktail {
     "strInstructionsZH-HANS": string | null;
     "strInstructionsZH-HANT": string | null;
     strDrinkThumb: string;
-    strIngredient1: string | null;
+    strIngredient1: string;
     strIngredient2: string | null;
     strIngredient3: string | null;
     strIngredient4: string | null;
@@ -31,7 +31,7 @@ export interface ICocktail {
     strIngredient13: string | null;
     strIngredient14: string | null;
     strIngredient15: string | null;
-    strMeasure1: string | null;
+    strMeasure1: string;
     strMeasure2: string | null;
     strMeasure3: string | null;
     strMeasure4: string | null;
@@ -50,4 +50,21 @@ export interface ICocktail {
     strImageAttribution: string | null;
     strCreativeCommonsConfirmed: string | null;
     dateModified: Date | null;
+}
+
+export interface IDrinkNew {
+    strDrink: string;
+    strCategory: string;
+    strAlcoholic: string;
+    strInstructions: string;
+    strGlass: string;
+    strDrinkThumb: string;
+    strIngredient1: string;
+    strIngredient2: string | null;
+    strIngredient3: string | null;
+    strIngredient4: string | null;
+    strMeasure1: string;
+    strMeasure2: string | null;
+    strMeasure3: string | null;
+    strMeasure4: string | null;
 }

@@ -6,7 +6,7 @@
   color: $black;
   padding-bottom: 50px;
 
-  .back-link {
+  &__back-link {
     display: inline-block;
     margin-bottom: 20px;
     @include link-black;
@@ -33,7 +33,7 @@
     &-right {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-start;
       gap: 15px;
 
       &-title {
@@ -51,7 +51,7 @@
     padding-bottom: 30px;
 
     &-item {
-      @include title-h4;
+      @include title-h5;
     }
   }
 
