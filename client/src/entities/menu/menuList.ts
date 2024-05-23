@@ -8,7 +8,7 @@ export const menuTop = [
     },
     {
         "id": "1",
-        "name": "Add drink",
+        "name": "Sign in",
         "url": "/add_drink",
         "order": 1
     },

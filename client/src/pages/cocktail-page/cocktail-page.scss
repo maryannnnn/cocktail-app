@@ -2,37 +2,57 @@
 @import '../../app/scss/colors';
 
 .cocktail {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 100%;
+  color: $black;
+  padding-bottom: 50px;
 
-  .back-link {
+  &__back-link {
     display: inline-block;
     margin-bottom: 20px;
-    color: #007bff;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    @include link-black;
+    @include body-lg;
   }
 
-  &__content {
+  &__inner {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
 
-    &__image {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+
+    &-left {
+      width: 600px;
     }
 
-    &__title {
-      font-size: 2em;
-      margin-bottom: 10px;
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-start;
+      gap: 15px;
+
+      &-title {
+        @include title-h3;
+      }
     }
   }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    &-item {
+      @include title-h5;
+    }
+  }
+
 }

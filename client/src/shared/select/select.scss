@@ -2,12 +2,15 @@
 @import '../../app/scss/colors';
 
 select {
-  border: 1px solid $dark-1;
+  border: 1px solid $black;
+  border-radius: 7px;
   background-color: transparent;
   width: 100%;
-  padding: 3px;
+  height: 47px;
+  padding: 5px;
+  margin: 5px;
   &:focus {
     outline: none;
-    background-color: $light-1;
+    background-color: $white;
   }
 }
